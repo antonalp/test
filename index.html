@@ -10,19 +10,20 @@
     <div class="container">
       <div class="info">
         <img src="avatar.webp" alt="Фото" class="avatar" />
+        <div class="info-text">
+          <h1>Тест Тестоев</h1>
+          <p>Основатель одноименного <strong>YouTube канала</strong></p>
+          <p>
+            Я люблю заниматься программирование, изучением новых технологий, а
+            также люблю полежать на диванчике!
+          </p>
 
-        <h1>Тест Тестоев</h1>
-        <p>Основатель одноименного <strong>YouTube канала</strong></p>
-        <p>
-          Я люблю заниматься программирование, изучением новых технологий, а
-          также люблю полежать на диванчике!
-        </p>
+          <h4>Мои социальные сети:</h4>
 
-        <h4>Мои социальные сети:</h4>
-
-        <a href="https:\\vk.ru\test" target="_blank">Вконтакте</a>
-        |
-        <a href="https:\\instagram.com\test" target="_blank">Инстаграм</a>
+          <a href="https:\\vk.ru\test" target="_blank">Вконтакте</a>
+          |
+          <a href="https:\\instagram.com\test" target="_blank">Инстаграм</a>
+        </div>
       </div>
 
       <div class="card bg-yellow">
@@ -37,12 +38,7 @@
 
       <div class="card bg-green">
         <h2>Опыт работы:</h2>
-        <table border="2">
-          <tr>
-            <th>Организация</th>
-            <th>Должность</th>
-            <th>Год работы</th>
-          </tr>
+        <table class="table">
           <tr>
             <td>ГУЗ "ЕРБ"</td>
             <td>Системный администратор</td>
@@ -63,25 +59,36 @@
 
       <div class="card bg-red">
         <h2>Youtube курсы:</h2>
-        <a href="youtube.html">Список курсов</a>
+        <ul class="link-list">
+          <li>
+            <a href="https:\\primer-youtube">Пример страницы Ютуба</a>
+          </li>
+          <li>
+            <a href="https:\\primer-youtube">Пример страницы Ютуба 2</a>
+          </li>
+        </ul>
       </div>
 
-      <hr />
-
-      <h2>Связаться со мной:</h2>
-      <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите свое имя..." />
-        <br />
-        <label for="email">Ваше email:</label>
-        <input type="email" id="email" placeholder="Введите email..." />
-        <br />
-        <label for="text">Ваше сообщение:</label>
-        <br />
-        <textarea id="text" rows="2" cols="15"></textarea>
-        <br />
-        <input type="submit" value="Связаться" />
-      </form>
+      <div class="contact">
+        <h2>Связаться со мной:</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите свое имя..." />
+            </div>
+            <div class="form-group">
+              <label for="email">Ваше email:</label>
+              <input type="email" id="email" placeholder="Введите email..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea id="text" rows="2" cols="15"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Связаться" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
