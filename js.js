@@ -1,6 +1,1 @@
-function qwerty {
-  console.log({
-    
-  });
-  
-}
+console.log('asdasdasdfsdfs')
