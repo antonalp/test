@@ -1,0 +1,6 @@
+function qwerty {
+  console.log({
+    
+  });
+  
+}
