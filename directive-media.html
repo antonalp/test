@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Директива @media</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 2px;
+      }
+
+      .catalog-title {
+        font-size: 64px;
+      }
+
+      .catalog-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .catalog-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightskyblue;
+        min-height: 100px;
+      }
+
+      @media (max-width: 700px) {
+        .catalog-title {
+          font-size: 36px;
+        }
+        .catalog-list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 400px) {
+        .catalog-list {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      button {
+        background-color: palegreen;
+        width: 150px;
+      }
+
+      @media (hover: hover) {
+        button:hover {
+          background-color: crimson;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="catalog">
+      <h1 class="catalog-title">Каталог товаров</h1>
+      <ul class="catalog-list">
+        <li class="catalog-item">Карточка товара</li>
+        <li class="catalog-item">Карточка товара</li>
+        <li class="catalog-item">Карточка товара</li>
+        <li class="catalog-item">Карточка товара</li>
+      </ul>
+    </section>
+    <button>Клик</button>
+  </body>
+</html>
